@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Cuestionario</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="description" content="Belleza, Tips">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/cuestio.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, miniumum-scale=1">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/estil.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="container container--flex">
+                <div class="logo-container column column--50">
+                    <h1 class="logo">Aplicaciones en el diseño</h1>
+                </div>
+                <div class="main-header__inicio column column--50">
+                    <p class="main-header__inicio">
+                        <span class="">Cuestionario</span>
+                    </p>
+                </div>
+            </div>   
+        </header>
+        <nav class="main-nav">
+            <div class="container container--flex">
+               <span class="icon-menu" id="btnmenu"></span>
+               <ul class="menu" id="menu">
+                   <li class="menu__item"><a href="index.html" class="menu__link menu__link--select">Inicio</a></li>
+                   <li class="menu__item"><a href="teoria.html" class="menu__link">Teoría</a></li>
+                   <li class="menu__item"><a href="ejercicios.html" class="menu__link">Ejercicios y Cuestionario</a></li>
+                   <li class="menu__item"><a href="video.html" class="menu__link">Video y Bibliografía</a></li>
+               </ul>
+               <div class="figuras-icon">
+                   <a href="ejercicios.html" class="figuras-icon__link"><span class="icon-libro"></span></a>
+                   <a href="index.html" class="figuras-icon__link"><span class="icon-home"></span></a>
+               </div>
+            </div>
+        </nav>
+        <section class="banner">
+            <img src="img/fondo1.jpg" alt="" class="banner__img">
+            <div class="banner__content">UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO</div>
+        </section>
+        
+         <br>
+
+<section class="group group--color">
+                <div class="container">
+                    <h2 class="main__title">Cuestionario</h2>
+                    <p class="main__txt">Pon a prueba tus conocimientos con el siguiente test.</p>
+                </div>
+            </section>
+
+    <br><br>
+    <section id="contenido">
+      <div class="contenedor1">
+        <div class="divider"></div> <br><br><br>
+        <i>1. -<div id = 'pregunta1' class = "preguntasTitulos"></div></i><br>
+        <div id = 'respuestas1' class = "preguntasOpciones"></div>
+        <br>
+        <i>2. -<div id = 'pregunta2' class = "preguntasTitulos"></div></i><br>
+        <div id = 'respuestas2' class = "preguntasOpciones"></div>
+        <br>
+        <i>3. -<div id = 'pregunta3' class = "preguntasTitulos"></div></i><br>
+        <div id = 'respuestas3' class = "preguntasOpciones"></div>
+        <br>
+        <i>4. -<div id = 'pregunta4' class = "preguntasTitulos"></div></i><br>
+        <div id = 'respuestas4' class = "preguntasOpciones"></div>
+        <br>
+        <i>5. -<div id = 'pregunta5' class = "preguntasTitulos"></div></i><br>
+        <div id = 'respuestas5' class = "preguntasOpciones"></div>
+        <br>
+        <i>6. -<div id = 'pregunta6' class = "preguntasTitulos"></div></i><br>
+        <div id = 'respuestas6' class = "preguntasOpciones"></div>
+        <br>
+        <i>7. -<div id = 'pregunta7' class = "preguntasTitulos"></div></i><br>
+        <div id = 'respuestas7' class = "preguntasOpciones"></div>
+        <br>
+        <i>8. -<div id = 'pregunta8' class = "preguntasTitulos"></div></i><br>
+        <div id = 'respuestas8' class = "preguntasOpciones"></div>
+        <br>
+        <i>9. -<div id = 'pregunta9' class = "preguntasTitulos"></div></i><br>
+        <div id = 'respuestas9' class = "preguntasOpciones"></div>
+        <br>
+        <i>10. -<div id = 'pregunta10' class = "preguntasTitulos"></div></i><br>
+        <div id = 'respuestas10' class = "preguntasOpciones"></div>
+        <br>
+        <br>
+        <p><p style="text-align:center;"><input type="button" value= "Calificar" onclick="comprobar()"><br><br><br>
+      </div>
+    </section>
+        
+<footer class="main-footer">
+            <div class="container container--flex">
+              <div class="column column--33">
+                 <h2 class="column__title">Bibliografía</h2>
+                 <p class="column__txt">Eugene D. Fabricius.Diseño lógico Moderno y teoría de la conmutación.Compañía editorial Continental, S.A de C.V. México.Primera Edición.México,1996.</p>
+                  <div class="figuras-icon">
+                           <a href="video.html" class="figuras-icon__link"><span class="icon-libro"></span></a>
+                  </div>
+                    
+              </div>
+              <div class="column column--33">
+                 <h2 class="column__title">González Pacheco Leonardo Alonso</h2>
+                 <p class="column__txt">Estructuras Discretas</p> 
+                 <p class="column__txt">Tema 3.5.3 Aplicaciones en el diseño</p> 
+                 <p class="column__txt">Grupo:5</p> 
+              </div>
+              <div class="column column--33">
+                 <h2 class="column__title">Universidad Nacional Autónoma de Mexico</h2>
+                 <p class="column__txt">Facultad de Ingeniería</p> 
+                 <p class="column__txt">Profesor:Orlando Zaldivar Zamorategui</p> 
+                 <p class="column__txt">CDMX</p> 
+              </div>
+              <p class="copy">© 2018 Aplicaciones en el diseño | Todos los derechos reservados.</p>
+            </div>
+    </footer>
+
+    </body>
+    <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
+</html>
+

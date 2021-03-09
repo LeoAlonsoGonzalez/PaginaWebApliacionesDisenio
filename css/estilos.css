@@ -1,0 +1,371 @@
+/*@import url('https://fonts.googleapis.com/css?family=Convergence|Expletus+Sans:400,700');*/
+@import url(estil.css);
+@font-face{
+    src: url(../fonts/ExpletusSans-Medium.ttf);
+    font-family: 'Convergence', sans-serif;
+    src: url(../fonts/Convergence-Regular.ttf);
+    font-family: 'Expletus Sans', cursive;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+   font-family: 'Convergence', sans-serif;/*letra*/
+   margin: 0; 
+}
+/*Estilos base*/
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+.container{
+    width: 100%;
+    margin: auto; 
+}
+.container--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.column {
+    width: 100%;
+}
+
+
+/*Estilos del header*/
+.main-header{
+    width: 100%;
+}
+.logo{
+    font-size: 1.8em;
+    color:#DE423A;/*COLOR DE LAS LETRAS*/
+    padding: 10px;
+    font-family: 'Expletus Sans', cursive;
+    font-weight: 100;
+}
+.main-header__inicio {
+    background:#1A5276;/*color azul marino*/
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/*---------------Estilos del menú--------------*/
+.main-nav {
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 10px;   
+}
+.icon-menu{
+    display: block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+    
+}
+
+.figuras-icon {
+    display: flex;
+    justify-content : space-between;
+}
+.figuras-icon [class*="icon-"] {
+    color: black;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 50%;
+}
+.figuras-icon__link {
+    text-decoration: none;
+    
+}
+.menu{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(24,106,59,.80);/*color back ground verde*/
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 0;/*animación para desplegar menu*/
+    overflow: hidden;
+    transition: height .3s linear;/*animacion para desplegar el menu*/
+    
+}
+.menu__link{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+.menu__link:hover{
+    background: #2E4053;/*color morado al seleccionar*/
+}
+.menu__link--select{
+    background: #2E4053;
+}
+.mostrar {
+    height: 196px;/*altura deacuerdo a la del menu*/
+}
+
+/*-----------------Estilos del Banner----------------*/
+
+.banner{
+    margin-top: -50px;
+    position: relative;
+}
+.banner:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1000;
+    top: 0;
+}
+.banner__img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.banner__content{
+    width: 90%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index:1500;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%) translateY(-50%);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/*-----------Estilos principales----------*/
+.group--color .container {
+    background: #1A5276;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.main__title{
+  margin: 15px 0;
+  font-size: 1.8em;
+  font-family: 'Expletus Sans', cursive;
+  font-weight: 100;
+    
+}
+
+.column__title{
+    font-size: 1.3em;
+}
+.main__about__description:nth-child(2){
+    padding: 10px;
+}
+.group__title{
+    font-family: 'Expletus Sans', cursive;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.8em;
+    margin: 30px;
+}
+
+.compuertas .column{
+    margin-bottom: 30px;
+    
+}
+.compuertas__img{
+    margin: auto;
+    max-width: 350px;  
+}
+.compuertas__title{
+    text-align: center;
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/*---------------Estilos del footer------------*/
+.main-footer{
+    background: #222;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;   
+}
+.copy{
+    text-align: center;
+    margin:auto;
+    margin-top: 15px;
+}
+/*--------------------Video--------------------*/
+#video,video{
+    margin: 0 auto;
+    width: 700px;
+    height: 500px;
+    
+}
+/*----------------Estilos responsive------------*/
+
+@media screen and (min-width:480px){
+    .logo{
+        color: white;   
+    }
+    .main-header__inicio{
+        text-align: right;
+    }
+    .banner{
+        margin-top: -150px;
+        z-index: -1000;
+    }
+    .main-header__inicio{
+        background: none;
+    }
+    .column--50{
+        width: 49%;
+    }
+    .main-nav {
+        background: rgba(86,101,115,.20)
+    }
+    .banner{
+        margin-top: -145px;
+        z-index: -1000;
+    }
+    .banner__content{
+        font-size: 2em;
+    }
+    .main{
+        padding-bottom: 15px;
+    }
+    .main__about__description .column:nth-child(2){
+        padding-left: 20px;
+        font-size: .9em;
+    }
+    .compuertas .column{
+        border: 5px solid #ddd;
+        padding: 5px;
+    }
+    .main-footer .container--flex{
+        align-items: flex-start;
+    }
+     .column--50{
+        width: 49%;
+    }
+    .column--50-25{
+      width: 49%;   
+    }
+    .column--33{
+      width: 29%; /*3 columnas en el footer*/  
+    }
+      
+    
+}
+
+@media screen and (min-width:768px){
+    .main__title{
+        font-size: 2.2em;
+    }
+    .main__about__description{
+      margin-top: 30px;  
+    }
+    .main__about__description .column--50:nth-child(2){
+        font-size: 1em;
+    }
+    .main__about__description .column--50:nth-child(2) .column__txt{
+        line-height: 30px; 
+    }
+    .column--50-25 {
+        width: 24.5%;
+    }
+    .column__title{
+        font-size: 1em;
+    }
+    .group__title{
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .container{
+      width: 1000px;  /*Ajusta el ancho de mis elementos*/
+    }
+    .logo{
+        font-size: 2em;
+        padding: 0;   
+    }
+    .main-header__inicio{
+        padding-right: 0;
+        font-size: 1.15em;
+        
+    }
+    .main-nav{
+       padding: 0; 
+    }
+    .banner__conten{
+        font-size: 2.5em;
+    }
+    .icon-menu{
+        display: none;    
+    }
+    .menu{
+        position: static;
+        display: flex;
+        height: auto;
+        width: auto;
+    }
+    .menu__link{
+        padding: 20px;
+    }
+    .group--color .container{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .main__title{
+        font-size: 2.5em;    
+    }
+    .main__about__description .column--50:nth-child(2) .column__txt{
+        line-height: 30px;
+    }
+    .compuertas__title{
+        font-size:1.4em;
+    }
+    .main-footer{
+       padding-top: 30px;
+       padding-top: 30px;
+    }
+}
+
+@media screen and (min-width:1600px){
+    .container{
+        width: 1400px; 
+    }
+    .main__about__description .column:nth-child(1) img {
+       width: 100%;
+       height: 350px;
+       object-fit: cover;
+    }
+    .compuertas__img{
+        height: 300px; 
+    }
+}

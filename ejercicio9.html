@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Aplicaciones en el diseño</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="container container--flex">
+                <div class="logo-container column column--50">
+                    <h1 class="logo">Aplicaciones en el diseño</h1>
+                </div>
+                <div class="main-header__inicio column column--50">
+                    <p class="main-header__inicio">
+                        <span class="">Ejercicios y Cuestionario</span>
+                    </p>
+                </div>
+            </div>   
+        </header>
+        <nav class="main-nav">
+            <div class="container container--flex">
+               <span class="icon-menu" id="btnmenu"></span>
+               <ul class="menu" id="menu">
+                   <li class="menu__item"><a href="index.html" class="menu__link menu__link--select">Inicio</a></li>
+                   <li class="menu__item"><a href="teoria.html" class="menu__link">Teoría</a></li>
+                   <li class="menu__item"><a href="ejercicios.html" class="menu__link">Ejercicios y Cuestionario</a></li>
+                   <li class="menu__item"><a href="video.html" class="menu__link">Video y Bibliografía</a></li>
+               </ul>
+               <div class="figuras-icon">
+                   <a href="ejercicios.html" class="figuras-icon__link"><span class="icon-libro"></span></a>
+                   <a href="index.html" class="figuras-icon__link"><span class="icon-home"></span></a>
+               </div>
+            </div>
+        </nav>
+        <section class="banner">
+            <img src="img/fondo1.jpg" alt="" class="banner__img">
+            <div class="banner__content">UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO</div>
+        </section>
+        
+        <main class="main">
+            <section class="group group--color">
+                <div class="container">
+                    <h2 class="main__title">Ejercicios</h2>
+                    <p class="main__txt">En esta sección puedes poner en práctica los conocimientos adquiridos con algunos ejercicios propuestos, incluyen su solución pero intentalos resolver primero por ti solo.</p>
+                </div>
+            </section>
+            
+            <section class="group main__about__description">
+                <div class="container container--flex">
+                    <div class="column column--50">
+                       <img src="img/fondo4.jpg" alt=""> 
+                    </div>
+                    <div class="column column--50">
+                        <h2 class="column__title">Refuerza tu conocimiento</h2>
+                        <p class="column__txt">Para poder ver algunos ejercicios y reforzar la teoría da click en el icono que se encuentra en la parte inferior , el icono es un libro.</p>
+                        <div class="figuras-icon">
+                           <a href="Ejercicios2.pdf" class="figuras-icon__link" target="_blank"><span class="icon-libro"></span></a>
+                        </div>
+                        
+                        <div class="figuras-icon">
+                           <a href="Ejercicios.pdf" class="figuras-icon__link" target="_blank"><span class="icon-libro"></span></a>
+                        </div>   
+                    </div> 
+	
+
+        <br>
+        <br>
+		<div class="cuerpo" >
+                        
+			<script type="text/javascript">
+  
+				var ejer = "e";
+				var i = 0;
+				function mostrar(valor){
+					
+					while(1){
+						i++;
+						if(valor == i){
+							ejer = ejer + valor;
+							document.getElementById(ejer).style.display = 'block';
+							ejer = "e";
+							i = 0;
+							break;
+						}
+						
+					}				
+				}
+    
+				function ocultar(valor){
+					
+					while(1){	
+						i++
+						if(valor == i){
+							ejer = ejer + valor;
+							document.getElementById(ejer).style.display = 'none';
+							ejer = "e";
+							i = 0;
+							break;
+						}
+					}				
+				}
+			</script>
+            
+            <center><h1>Ejercicio 9.</h1>
+            
+                <h2>Dibuja el diagrama del circuito lógico que corresponde a la siguiente expresión booleana (7AB + 7CD)</h2>
+                
+            </center>    
+            
+            <br> <h2>Solución.</h2>
+            
+            
+            <input type="button" value="Ocultar" onclick="ocultar(1)"> 
+            
+            <input type="button" value="Mostrar" onclick="mostrar(1)">
+			<br>
+            <div id='e1' style='display:none;'>
+                <b><div class="column column--50-25"><img src="img/ej9.png" alt=""></div>Se utiliza una compuerta NAND para la operación A NAND B 7(AB).
+            </div> 
+			
+			<br>
+			
+			<input type="button" value="Ocultar" onclick="ocultar(2)"> 
+            
+            <input type="button" value="Mostrar" onclick="mostrar(2)">
+			
+			<div id='e2' style='display:none;'>
+                <div class="column column--50-25"><img src="img/ej91.png" alt=""></div>A continuación, se coloca otra compuerta NAND que multiplicara la entrada 7(CD).
+            </div> 
+			
+			<br></br>
+			
+            <input type="button" value="Ocultar" onclick="ocultar(3)"> 
+            
+            <input type="button" value="Mostrar" onclick="mostrar(3)">
+			
+            <div id='e3' style='display:none;'>
+                <div class="column column--50-25"><img src="img/ej92.png" alt=""></div>Finalmente se suma la expresión anterior con  7(CD),usando la compuerta OR  7(AB)+7(CD).
+            </div> 
+			
+			<br></br>
+			
+		</div>
+
+	
+		</div>
+   
+    </main>
+    
+     <footer class="main-footer">
+            <div class="container container--flex">
+              <div class="column column--33">
+                 <h2 class="column__title">Bibliografía</h2>
+                 <p class="column__txt">Eugene D. Fabricius.Diseño lógico Moderno y teoría de la conmutación.Compañía editorial Continental, S.A de C.V. México.Primera Edición.México,1996.</p>
+                  <div class="figuras-icon">
+                           <a href="video.html" class="figuras-icon__link"><span class="icon-libro"></span></a>
+                  </div>
+                    
+              </div>
+              <div class="column column--33">
+                 <h2 class="column__title">González Pacheco Leonardo Alonso</h2>
+                 <p class="column__txt">Estructuras Discretas</p> 
+                 <p class="column__txt">Tema 3.5.3 Aplicaciones en el diseño</p> 
+                 <p class="column__txt">Grupo:5</p> 
+              </div>
+              <div class="column column--33">
+                 <h2 class="column__title">Universidad Nacional Autónoma de Mexico</h2>
+                 <p class="column__txt">Facultad de Ingeniería</p> 
+                 <p class="column__txt">Profesor:Orlando Zaldivar Zamorategui</p> 
+                 <p class="column__txt">CDMX</p> 
+              </div>
+              <p class="copy">© 2018 Aplicaciones en el diseño | Todos los derechos reservados.</p>
+            </div>
+    </footer>
+
+	</body>
+        <script src="js/menu.js"></script>
+</html>
